@@ -1,1 +1,1 @@
-command: ["bash", "-lc", "npm ci && npm run build && npm run start"]
+command: ["bash", "-lc", "npm ci && npm run build && npx serve -s dist -l ${DATABRICKS_APP_PORT}"]
